@@ -1,0 +1,170 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color/: red; */
+}
+
+* {
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+}
+
+a:visited {
+    color: inherit;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    max-width: 350px;
+    margin: auto;
+}
+
+
+form {
+    padding: 0 20px 20px 20px;
+    border: 1px solid grey;
+    margin-top: 100px;
+    transition: .3s;
+}
+
+form:hover {
+    box-shadow: 0 0 300px orange;
+    border: 1px solid orange;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+label::after {
+    content: "*";
+    color: red;
+}
+
+input + label {
+    display: inline;
+}
+input + label::after {
+    content: none;
+}
+
+.password-block {
+    position: relative;
+}
+
+.forgot-password {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    color: blue;
+    font-size: 12px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: 3px solid orange;
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    accent-color: orange;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid grey;
+    /* border-radius: 5px; */
+    /* color: white; */
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+button[type="submit"] {
+    background-color: orange;
+}
+
+button[type="reset"] {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+}
+
+button {
+    background-color: rgb(168, 168, 168);
+}
+
+.help {
+    /* padding-left: 10px; */
+    color: blue;
+
+    
+}
+
+.required {
+    color: red;
+    margin: 0;
+    text-align: right;
+}
+
+.centered-line-text {
+    position: relative;
+    padding: 20px 0;
+}
+
+.centered-line-text p {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    max-width: fit-content;
+    background-color: white;
+    padding: 0 10px;
+    /* margin: auto; */
+    transform: translateX(100px);
+    color: rgb(73, 73, 73)
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 5px solid grey;
+    margin-top: 20px;
+}
+
+.extra-help {
+    position:  fixed;
+    right: 0;
+    background-color: red;
+    width: 100px;
+    bottom: 100px;
+    font-size: 50px;
+}
+
+.footer-links {
+    color: blue!important;
+    padding: 0 20px;
+    font-size: 12px;
+}

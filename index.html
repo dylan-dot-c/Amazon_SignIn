@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Amazon Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Sign Up</h1>
+
+            
+            <div class="input-field ">
+                <label for="email">Email(phone or mobile accounts)</label>
+                <input type="text" placeholder="Enter Email" required id="email">
+            </div>
+            <div class="input-field password-block">
+                <label for="password">Password</label>
+                <p class="forgot-password"><a href="https://www.amazon.in/ap/forgotpassword">Forgot Password</a></p>
+                <input type="password" required placeholder="Enter Password" id="password">
+                <input type="checkbox" name="showPassword" id="showPassword">
+                <label for="showPassword">Show Password</label>
+            </div>
+
+            <button type="submit">Continue</button>
+            <button type="reset">Reset</button>
+
+            <details>
+                <summary><a href="/amaxonhelp.com" class="help">Need Help?</a></summary>
+                <summary><a href="https://www.amazon.in/ap/forgotpassword">Forgot Password</a></summary>
+            </details>
+            <p class="required"><span>*</span> required</p>
+        </form>
+        
+        <div class="centered-line-text">
+            <hr>
+            <p>New To Amazon?</p>
+        </div>
+        <button>Create Your Amazon Account</button>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#" class="footer-links">Conditions of Use</a>
+            <a href="#" class="footer-links">Privacy Policy</a>
+            <a href="#" class="footer-links">Help</a>
+        </div>
+
+        <p>&copy; 1996-2020, Amzon.com, inc or it's affiliates.</p>
+    </footer>
+
+    <script>
+        const showPassword = document.getElementById('showPassword')
+        const password = document.getElementById('password')
+
+        showPassword.addEventListener('click', (e) => {
+            console.log(e.target)
+            console.log(e.target.checked)
+            if(e.target.checked) {
+                password.setAttribute('type', 'text')
+            }else {
+                password.setAttribute('type', 'password')
+
+            }
+        })
+    </script>
+</body>
+</html>
