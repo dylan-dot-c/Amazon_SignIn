@@ -25,6 +25,7 @@ a {
 
 main {
     max-width: 350px;
+    padding-top: 100px;
     margin: auto;
 }
 
@@ -32,7 +33,7 @@ main {
 form {
     padding: 0 20px 20px 20px;
     border: 1px solid grey;
-    margin-top: 100px;
+    margin-top: 10px;
     transition: .3s;
 }
 
@@ -48,17 +49,17 @@ label {
     font-size: 12px;
 }
 
-label::after {
+/* label::after {
     content: "*";
     color: red;
-}
+} */
 
 input + label {
     display: inline;
 }
-input + label::after {
+/* input + label::after {
     content: none;
-}
+} */
 
 .password-block {
     position: relative;
@@ -167,4 +168,8 @@ footer {
     color: blue!important;
     padding: 0 20px;
     font-size: 12px;
+}
+
+.image-container {
+    text-align: center;
 }
